@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import PokemonList from './components/PokemonList/PokemonList';
+import { BrowserRouter } from 'react-router';
+
 
 const initialState = [
   { _id: 1, name: 'bulbasaur', weight: 69, height: 7 },
