@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PokemonList from './components/PokemonList/PokemonList';
-import { BrowserRouter } from 'react-router';
+
 
 
 const initialState = [
