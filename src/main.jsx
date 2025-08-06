@@ -11,6 +11,7 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>,
 )
+
 // If can't remember what to do for React Router, can go to 'React Router docs' 
 // and use the following:
 
