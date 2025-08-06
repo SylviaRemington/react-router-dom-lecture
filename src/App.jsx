@@ -3,7 +3,7 @@ import PokemonList from './components/PokemonList/PokemonList';
 import NavBar from './components/NavBar/NavBar';
 
 
-
+//initialState is just the starting point and initial state of the function / we don't want to put stuff we don't need in the function - by putting it outside, it only loads into state once.
 const initialState = [
   { _id: 1, name: 'bulbasaur', weight: 69, height: 7 },
   { _id: 2, name: 'ivysaur', weight: 130, height: 10 },
@@ -13,7 +13,7 @@ const initialState = [
 ];
 
 const App = () => {
-  const [pokemon, setPokemon] = useState(initialState);
+  const [pokemon, setPokemon] = useState(initialState); //initialState is the list above
   return (
     <>
       <NavBar />
