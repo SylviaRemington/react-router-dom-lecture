@@ -25,8 +25,8 @@ const App = () => {
         {/* the path is the endpoint & the element is the Pokemon list with its initial state. */}
         <Route path='/' element={<h2>Home Page</h2>} />
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
-        <Route path='/pokemon/:pokemonId' element={<PokemonDetails pokemon={pokemon} />} />
         <Route path='/pokemon/new' element={<PokemonForm />} />
+        <Route path='/pokemon/:pokemonId' element={<PokemonDetails pokemon={pokemon} />} />
         
         {/* New, catch-all default route */}
         <Route path="*" element={<h2>Whoops, nothing here!</h2>} />
