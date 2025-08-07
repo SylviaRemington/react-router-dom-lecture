@@ -1,12 +1,11 @@
 import { useParams } from 'react-router';
 
-const PokemonDetails = (props) => {
-    // Instead of this, const params = useParams(); , we can use destructuring which looks like:
+const PokemonDetails = ({pokemon}) => {
     const { pokemonId } = useParams();
+    console.log({'all-pokemon': pokemon, pokemonId});
 
-    // console.log('Params are: ', params.pokemonId);
-  // Always verify that any props are being passed correctly!
-//   console.log(props); 
+    const singlePokemon = pokemon.find((poke) => poke._id === Number (pokemonId));
+    console.log(singlePokemon);
 
   return (
     <>
