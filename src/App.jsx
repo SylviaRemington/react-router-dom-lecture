@@ -20,6 +20,7 @@ const App = () => {
       <NavBar />
       <h1>Pokemon!</h1>
       <Routes>
+        <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
         <PokemonList pokemon={pokemon} />
       </Routes>
     </>
