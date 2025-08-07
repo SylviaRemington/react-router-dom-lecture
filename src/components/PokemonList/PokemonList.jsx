@@ -1,4 +1,5 @@
 // src/components/PokemonList/PokemonList.jsx
+import {Link} from 'react-router';
 
 const PokemonList = (props) => {
   return (
