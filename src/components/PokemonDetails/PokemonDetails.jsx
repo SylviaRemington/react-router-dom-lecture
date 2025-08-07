@@ -1,8 +1,11 @@
-// src/components/PokemonDetails/PokemonDetails.jsx
+import { useParams } from 'react-router';
 
 const PokemonDetails = (props) => {
+    const params = useParams();
+    console.log('Params are: ', params);
+
   // Always verify that any props are being passed correctly!
-  console.log(props); 
+//   console.log(props); 
 
   return (
     <>
