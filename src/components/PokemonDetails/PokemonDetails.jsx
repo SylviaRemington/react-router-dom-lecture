@@ -9,7 +9,7 @@ const PokemonDetails = ({pokemon}) => {
     // console.log(singlePokemon);
 
     if (!singlePokemon) {
-        return <p>No pokemon of that ID</p>;
+        return <p>No pokemon of that ID.</p>;
     }
 
   return (
