@@ -22,8 +22,6 @@ const App = () => {
       <Routes>
         {/* the path is the endpoint & the element is the Pokemon list with its initial state. */}
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
-        {/* This below becomes the element part. */}
-        <PokemonList pokemon={pokemon} />
       </Routes>
     </>
   );
