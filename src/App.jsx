@@ -21,6 +21,7 @@ const App = () => {
       <h1>Pokemon!</h1>
       <Routes>
         {/* the path is the endpoint & the element is the Pokemon list with its initial state. */}
+        <Route path='/' element={<p>Home Page</p>} />
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
       </Routes>
     </>
