@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Routes, Route} from 'react-router';
 import PokemonList from './components/PokemonList/PokemonList';
 import NavBar from './components/NavBar/NavBar';
 
@@ -18,7 +19,9 @@ const App = () => {
     <>
       <NavBar />
       <h1>Pokemon!</h1>
-      <PokemonList pokemon={pokemon} />
+      <Routes>
+        <PokemonList pokemon={pokemon} />
+      </Routes>
     </>
   );
 };
