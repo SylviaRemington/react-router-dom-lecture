@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {Routes, Route} from 'react-router';
+import PokemonDetails from './components/PokemonDetails/PokemonDetails';
 import PokemonList from './components/PokemonList/PokemonList';
 import NavBar from './components/NavBar/NavBar';
 
@@ -23,6 +24,7 @@ const App = () => {
         {/* the path is the endpoint & the element is the Pokemon list with its initial state. */}
         <Route path='/' element={<h2>Home Page</h2>} />
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
+        <Route path='/pokemon/:pokemonId' element={<PokemonDetails pokemon={pokemon} />} />
         
         {/* New, catch-all default route */}
         <Route path="*" element={<h2>Whoops, nothing here!</h2>} />
