@@ -8,7 +8,7 @@ const PokemonDetails = ({pokemon}) => {
     const singlePokemon = pokemon.find((poke) => poke._id === Number (pokemonId));
     // console.log(singlePokemon);
 
-    if (!id) {
+    if (!singlePokemon) {
         return <p>No pokemon of that ID</p>;
     }
 
