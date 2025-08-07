@@ -2,7 +2,7 @@ import { useParams } from 'react-router';
 
 const PokemonDetails = (props) => {
     const params = useParams();
-    console.log('Params are: ', params);
+    console.log('Params are: ', params.pokemonId);
 
   // Always verify that any props are being passed correctly!
 //   console.log(props); 
