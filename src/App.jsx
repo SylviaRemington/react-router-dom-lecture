@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {Routes, Route} from 'react-router';
 import PokemonDetails from './components/PokemonDetails/PokemonDetails';
 import PokemonList from './components/PokemonList/PokemonList';
+import PokemonForm from './components/PokemonForm/PokemonForm';
 import NavBar from './components/NavBar/NavBar';
 
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/' element={<h2>Home Page</h2>} />
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
         <Route path='/pokemon/:pokemonId' element={<PokemonDetails pokemon={pokemon} />} />
+        <Route path='/pokemon/new' element={<PokemonForm />} />
         
         {/* New, catch-all default route */}
         <Route path="*" element={<h2>Whoops, nothing here!</h2>} />
