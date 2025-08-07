@@ -17,6 +17,12 @@ const initialState = [
 
 const App = () => {
   const [pokemon, setPokemon] = useState(initialState); //initialState is the list above
+  
+  const addPokemon = (newPokemonData) => {
+    newPokemonData._id = pokemon.length + 1;
+    setPokemon([...pokemon, newPokemonData]);
+  }
+
   return (
     <>
       <NavBar />
@@ -25,7 +31,7 @@ const App = () => {
         {/* the path is the endpoint & the element is the Pokemon list with its initial state. */}
         <Route path='/' element={<h2>Home Page</h2>} />
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
-        <Route path='/pokemon/new' element={<PokemonForm />} />
+        <Route path='/pokemon/new' element={<PokemonForm addPokemon={addPokemon} />} />
         <Route path='/pokemon/:pokemonId' element={<PokemonDetails pokemon={pokemon} />} />
         
         {/* New, catch-all default route */}
